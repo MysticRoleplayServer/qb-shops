@@ -168,6 +168,8 @@ Config.Products = {
         { name = "ignition_bomb", price = 1200, amount = 25 },
         { name = "impact_bomb", price = 1200, amount = 25 },
         { name = "firelighter", price = 1200, amount = 25 },
+        { name = 'ifishingrod', price = 1000, amount = 100 }, -- mz-fishing
+        { name = 'ifishingbait', price = 10, amount = 5000 }, -- mz-fishing
         -- { name = "sodiumbicarbonate", price = 8, amount = 25 },
         -- { name = "plasticjerrycan", price = 20, amount = 25 },
     },
@@ -256,6 +258,10 @@ Config.Products = {
         { name = "fitbit", price = 400, amount = 150, },
         { name = "powerbank", price = 30, amount = 50, },
         { name = "tablet", price = 200, amount = 50, },
+    },
+    ["fishing"] = { -- mz-fishing
+        { name = 'fishingrod', price = 100, amount = 100 },
+        { name = 'fishingbait', price = 1, amount = 5000 },
     },
 }
 
@@ -1024,5 +1030,21 @@ Config.Locations = {
         ['targetLabel'] = 'Open Shop',
         ['products'] = Config.Products['blackmarket'],
         ['delivery'] = vector4(-428.6385, -1728.1962, 19.7838, 75.6646)
+    },
+
+    -- mz-fishing Shop
+    ["fishing"] = {
+        ["label"] = "Boof Romano's Fish Merchant",
+        ["coords"] = vector4(3803.69, 4440.73, 4.09, 4.39),
+        ["ped"] = 's_m_m_migrant_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-fish-fins",
+        ["targetLabel"] = "Sell Fish",
+        ["products"] = Config.Products["fishing"],
+        ["showblip"] = true,
+        ["blipsprite"] = 68,
+        ["blipscale"] = 0.8,
+        ["blipcolor"] = 47
     },
 }
