@@ -84,8 +84,10 @@ Config.Products = {
         { name = 'needle',    	price = 60,   amount = 1000, },
     },
     ['gearshop'] = {
-        { name = 'diving_gear', price = 2500, amount = 10 },
-        { name = 'jerry_can',   price = 200,  amount = 50 },
+        { name = 'diving_gear',  price = 2500, amount = 10 },
+        { name = 'jerry_can',    price = 200,  amount = 50 },
+        { name = "jerrycan",     price = 750,  amount = 5, info = { gasamount = 0 }, }, -- This must be included or, your item will not store fuel properly! -- CDN-Fuel
+        { name = "syphoningkit", price = 1000, amount = 5, info = { gasamount = 0 }, },-- This must be included or, your item will not store fuel properly! -- CDN-Fuel / CDN-Syphoning
     },
     ['leisureshop'] = {
         { name = 'parachute',   price = 2500, amount = 10 },
@@ -215,6 +217,7 @@ Config.Products = {
         { name = 'armor',               price = 100, amount = 20 },
         { name = 'heavyarmor',          price = 125, amount = 20 },
         { name = 'radio',               price = 150, amount = 50 },
+        { name = 'radiocell',           price = 25,  amount = 50 },
         { name = 'spikestrip',          price = 75,  amount = 20 },
         { name = 'police_stormram',     price = 50,  amount = 50 },
         { name = 'policetablet',        price = 75,  amount = 5 },
