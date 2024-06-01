@@ -281,7 +281,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(26.45, -1315.51, 29.62, 0.07),
         ['useStock'] = true
@@ -298,7 +298,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-3047.95, 590.71, 7.62, 19.53)
     },
@@ -314,7 +314,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-3245.76, 1005.25, 12.83, 269.45)
     },
@@ -330,7 +330,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1741.76, 6419.61, 35.04, 6.83)
     },
@@ -346,7 +346,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1963.81, 3750.09, 32.26, 302.46)
     },
@@ -362,7 +362,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(541.54, 2663.53, 42.17, 120.51)
     },
@@ -378,7 +378,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(2662.19, 3264.95, 55.24, 168.55)
     },
@@ -394,7 +394,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(2553.24, 399.73, 108.56, 344.86)
     },
@@ -410,7 +410,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(379.97, 357.3, 102.56, 26.42)
     },
@@ -427,7 +427,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-40.51, -1747.45, 29.29, 326.39)
     },
@@ -443,7 +443,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-702.89, -917.44, 19.21, 181.96)
     },
@@ -459,7 +459,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1829.29, 801.49, 138.41, 41.39)
     },
@@ -475,7 +475,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1160.62, -312.06, 69.28, 3.77)
     },
@@ -491,7 +491,7 @@ Config.Locations = {
         ['products'] = Config.Products['normal'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1702.68, 4917.28, 42.22, 139.27)
     },
@@ -508,7 +508,7 @@ Config.Locations = {
         ['products'] = Config.Products['liquor'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1226.92, -901.82, 12.28, 213.26)
     },
@@ -524,7 +524,7 @@ Config.Locations = {
         ['products'] = Config.Products['liquor'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1468.29, -387.61, 38.79, 220.13)
     },
@@ -540,7 +540,7 @@ Config.Locations = {
         ['products'] = Config.Products['liquor'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-2961.49, 376.25, 15.02, 111.41)
     },
@@ -556,7 +556,7 @@ Config.Locations = {
         ['products'] = Config.Products['liquor'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1194.52, 2722.21, 38.62, 9.37)
     },
@@ -572,7 +572,7 @@ Config.Locations = {
         ['products'] = Config.Products['liquor'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1129.73, -989.27, 45.97, 280.98)
     },
@@ -589,7 +589,7 @@ Config.Locations = {
         ['products'] = Config.Products['hardware'],
         ['showblip'] = true,
         ['blipsprite'] = 402,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(89.15, -1745.29, 30.09, 315.25)
     },
@@ -605,7 +605,7 @@ Config.Locations = {
         ['products'] = Config.Products['hardware'],
         ['showblip'] = true,
         ['blipsprite'] = 402,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(2704.68, 3457.21, 55.54, 176.28)
     },
@@ -621,7 +621,7 @@ Config.Locations = {
         ['products'] = Config.Products['hardware'],
         ['showblip'] = true,
         ['blipsprite'] = 402,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
@@ -638,7 +638,7 @@ Config.Locations = {
         ['products'] = Config.Products['electronics'],
         ['showblip'] = true,
         ['blipsprite'] = 619,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 7,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
@@ -653,7 +653,7 @@ Config.Locations = {
         ['products'] = Config.Products['electronics'],
         ['showblip'] = true,
         ['blipsprite'] = 619,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 7,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
@@ -668,7 +668,7 @@ Config.Locations = {
         ['products'] = Config.Products['electronics'],
         ['showblip'] = true,
         ['blipsprite'] = 619,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 7,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
@@ -683,7 +683,7 @@ Config.Locations = {
         ['products'] = Config.Products['electronics'],
         ['showblip'] = true,
         ['blipsprite'] = 619,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 7,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
@@ -698,7 +698,7 @@ Config.Locations = {
         ['products'] = Config.Products['electronics'],
         ['showblip'] = true,
         ['blipsprite'] = 619,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 7,
         ['delivery'] = vector4(-438.25, 6146.9, 31.48, 136.99)
     },
@@ -716,7 +716,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-660.61, -938.14, 21.83, 167.22)
     },
@@ -732,7 +732,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(820.97, -2146.7, 28.71, 359.98)
     },
@@ -748,7 +748,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1687.17, 3755.47, 34.34, 163.69)
     },
@@ -764,7 +764,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-341.72, 6098.49, 31.32, 11.05)
     },
@@ -780,7 +780,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(249.0, -50.64, 69.94, 60.71)
     },
@@ -796,7 +796,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-5.82, -1107.48, 29.0, 164.32)
     },
@@ -812,7 +812,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(2578.77, 285.53, 108.61, 277.2)
     },
@@ -828,7 +828,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1127.67, 2708.18, 18.8, 41.76)
     },
@@ -844,7 +844,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(847.83, -1020.36, 27.88, 88.29)
     },
@@ -860,7 +860,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1302.44, -385.23, 36.62, 303.79)
     },
@@ -876,7 +876,7 @@ Config.Locations = {
         ['products'] = Config.Products['weapons'],
         ['showblip'] = true,
         ['blipsprite'] = 110,
-        ['blipscale'] = 0.6,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-3183.6, 1084.35, 20.84, 68.13)
     },
@@ -893,7 +893,7 @@ Config.Locations = {
         ['products'] = Config.Products['weedshop'],
         ['showblip'] = true,
         ['blipsprite'] = 140,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1162.13, -1568.57, 4.39, 328.52)
     },
@@ -910,7 +910,7 @@ Config.Locations = {
         ['products'] = Config.Products['gearshop'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1674.18, -1073.7, 13.15, 333.56)
     },
@@ -927,7 +927,7 @@ Config.Locations = {
         ['products'] = Config.Products['leisureshop'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
@@ -1018,7 +1018,7 @@ Config.Locations = {
         ['products'] = Config.Products['prison'],
         ['showblip'] = true,
         ['blipsprite'] = 52,
-        ['blipscale'] = 0.8,
+        ['blipscale'] = 0.7,
         ['blipcolor'] = 0,
         ['delivery'] = vector4(1845.8175, 2585.9312, 45.6721, 96.7577)
     },
@@ -1047,7 +1047,7 @@ Config.Locations = {
         ["products"] = Config.Products["fishing"],
         ["showblip"] = true,
         ["blipsprite"] = 68,
-        ["blipscale"] = 0.8,
+        ["blipscale"] = 0.7,
         ["blipcolor"] = 47
     },
 }
