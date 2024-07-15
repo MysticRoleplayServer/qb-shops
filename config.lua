@@ -55,8 +55,7 @@ Config.Products = {
         { name = "lockpick", price = 200, amount = 50, },
         { name = "weapon_wrench", price = 250, amount = 250, },
         { name = "weapon_hammer", price = 250, amount = 250, },
-        { name = "weapon_bat", price = 500, amount = 50,  requiredGang = { "lostmc" } },  -- Gang only options in stores
-        { name = "repairkit", price = 250, amount = 50,  requiredJob = { ["mechanic"] = 0, ["police"] = 0 } },
+        -- { name = "repairkit", price = 250, amount = 50,  requiredJob = { 'mechanic', 'police' } },
         { name = "screwdriverset", price = 350, amount = 50, },
         -- { name = "trowel", price = 50, amount = 50, },
         { name = "binoculars", price = 50, amount = 50, },
@@ -71,7 +70,9 @@ Config.Products = {
         { name = "nylonrope", price = 50, amount = 10, info = {} },
         { name = "blowtorch", price = 50, amount = 10, info = {} },
         { name = "laserdrill", price = 50, amount = 10, info = {} },
-        { name = "advancedrepairkit", price = 500, amount = 50,  requiredJob = { ["mechanic"] = 0 } },
+        { name = "duct_tape", price = 10, amount = 50, info = {} },
+        -- { name = "advancedrepairkit", price = 500, amount = 50, requiredJob = 'mechanic' },
+        { name = "weaponrepairkit", price = 150, amount = 50, info = {} },
     },
     ['weedshop'] = {
         { name = "joint", price = 10, amount = 1000, },
@@ -99,12 +100,20 @@ Config.Products = {
         { name = "weapon_knife", price = 250, amount = 250, },
         { name = "weapon_bat", price = 250, amount = 250, },
         { name = "weapon_hatchet",price = 250, amount = 250, },
-        { name = "weapon_pistol", price = 2500, amount = 5, requiresLicense = {"weapon"}, requiresItem = {"weaponlicense"} },
-        { name = "weapon_snspistol", price = 1500, amount = 5, requiresLicense = {"weapon"}, requiresItem = {"weaponlicense"} },
-        { name = "weapon_vintagepistol", price = 4000, amount = 5, requiresLicense = {"weapon"}, requiresItem = {"weaponlicense"} },
+        { name = "weapon_pistol", price = 2500, amount = 5, requiredLicense = 'weapon' },
+        { name = "weapon_snspistol", price = 1500, amount = 5, requiredLicense = 'weapon' },
+        { name = "weapon_vintagepistol", price = 4000, amount = 5, requiredLicense = 'weapon' },
         { name = "pistol_ammo", price = 250, amount = 250, },
     },
     ["blackmarket"] = {
+        { name = "gruppesechstablet", price = 1200, amount = 25 },
+        { name = "remote_bomb", price = 1200, amount = 25 },
+        { name = "ignition_bomb", price = 1200, amount = 25 },
+        { name = "impact_bomb", price = 1200, amount = 25 },
+        { name = "firelighter", price = 1200, amount = 25 },
+        { name = 'ifishingrod', price = 1000, amount = 100 }, -- mz-fishing
+        { name = 'ifishingbait', price = 10, amount = 5000 }, -- mz-fishing
+        -------------
         { name = "weapon_shiv", price = 1000, amount = 20 },
         { name = "weapon_navyrevolver", price = 3000, amount = 5 },
         { name = "weapon_gadgetpistol", price = 4000, amount = 5 },
@@ -165,13 +174,6 @@ Config.Products = {
         -- { name = "weapon_combatmg_mk2", price = 56000, amount = 5 },
     },
     ["blackmarket5"] = {
-        { name = "gruppesechstablet", price = 1200, amount = 25 },
-        { name = "remote_bomb", price = 1200, amount = 25 },
-        { name = "ignition_bomb", price = 1200, amount = 25 },
-        { name = "impact_bomb", price = 1200, amount = 25 },
-        { name = "firelighter", price = 1200, amount = 25 },
-        { name = 'ifishingrod', price = 1000, amount = 100 }, -- mz-fishing
-        { name = 'ifishingbait', price = 10, amount = 5000 }, -- mz-fishing
         -- { name = "sodiumbicarbonate", price = 8, amount = 25 },
         -- { name = "plasticjerrycan", price = 20, amount = 25 },
     },
@@ -246,12 +248,55 @@ Config.Products = {
         { name = 'weapon_flashlight',       price = 75,  amount = 5 },
         { name = 'weapon_fireextinguisher', price = 50,  amount = 15 },
     },
-    ['mechanic'] = {
-        { name = "spanner", price = 75, amount = 50 },
-        { name = "adjustable_spanner", price = 95, amount = 50, },
-        { name = "pliers", price = 50, amount = 50, },
-        { name = "buzz_saw", price = 180, amount = 50, },
-        { name = "impact_driver", price = 150, amount = 50, },
+    ['mechanic'] = { -- jg-mechanic
+        -- Servicing Items
+        { name = 'engine_oil',          price = 500,  amount = 100 },
+        { name = 'tyre_replacement',    price = 500,  amount = 100 },
+        { name = 'clutch_replacement',  price = 500,  amount = 100 },
+        { name = 'air_filter',          price = 500,  amount = 100 },
+        { name = 'spark_plug',          price = 500,  amount = 100 },
+        { name = 'suspension_parts',    price = 500,  amount = 100 },
+        { name = 'brakepad_replacement', price = 500, amount = 100 },
+        -- Engine Items
+        { name = 'i4_engine',           price = 500,  amount = 100 },
+        { name = 'v6_engine',           price = 500,  amount = 100 },
+        { name = 'v8_engine',           price = 500,  amount = 100 },
+        { name = 'v12_engine',          price = 500,  amount = 100 },
+        { name = 'turbocharger',        price = 500,  amount = 100 },
+        -- Electric Engines
+        { name = 'ev_motor',            price = 500,  amount = 100 },
+        { name = 'ev_battery',          price = 500,  amount = 100 },
+        { name = 'ev_coolant',          price = 500,  amount = 100 },
+        -- Drivetrain Items
+        { name = 'awd_drivetrain',      price = 500,  amount = 100 },
+        { name = 'rwd_drivetrain',      price = 500,  amount = 100 },
+        { name = 'fwd_drivetrain',      price = 500,  amount = 100 },
+        -- Tuning Items
+        { name = 'slick_tyres',         price = 500,  amount = 100 },
+        { name = 'semi_slick_tyres',    price = 500,  amount = 100 },
+        { name = 'offroad_tyres',       price = 500,  amount = 100 },
+        { name = 'ceramic_brakes',      price = 500,  amount = 100 },
+        { name = 'drift_tuning_kit',    price = 500,  amount = 100 },
+        -- Cosmetic Items
+        { name = 'lighting_controller', price = 500,  amount = 100 },
+        { name = 'stancing_kit',        price = 500,  amount = 100 },
+        { name = 'cosmetic_part',       price = 500,  amount = 100 },
+        { name = 'respray_kit',         price = 500,  amount = 100 },
+        { name = 'vehicle_wheels',      price = 500,  amount = 100 },
+        { name = 'tyre_smoke_kit',      price = 500,  amount = 100 },
+        { name = 'extras_kit',          price = 500,  amount = 100 },
+        -- Nitrous
+        { name = 'nitrous_bottle',      price = 500,  amount = 100 },
+        { name = 'empty_nitrous_bottle', price = 500, amount = 100 },
+        { name = 'nitrous_install_kit', price = 500,  amount = 100 },
+        -- Reppair and Cleaning Items
+        { name = 'cleaning_kit',        price = 500,  amount = 100 },
+        { name = 'repair_kit',          price = 500,  amount = 100 },
+        { name = 'duct_tape',           price = 500,  amount = 100 },
+        -- Performance
+        { name = 'performance_part',    price = 500,  amount = 100 },
+        -- Mechanic Tablet
+        { name = 'mechanic_tablet',     price = 100,  amount = 100 },
     },
     ["electronics"] = {
         { name = "phone", price = 850, amount = 50 },
@@ -984,44 +1029,17 @@ Config.Locations = {
         ['requiredJob'] = 'ambulance'
     },
 
-    ['mechanic'] = {
-        ['label'] = 'Mechanic Shop',
-        ['coords'] = vector4(-343.66, -140.78, 39.02, 0),
+    ['mosleys'] = {
+        ['label'] = 'Mosleys Mechanic Shop',
+        ['coords'] = vector4(-12.34, -1677.78, 29.48, 11.23),
+        ['ped'] = 's_m_m_doctor_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-hand',
+        ['targetLabel'] = 'Open Shop',
         ['products'] = Config.Products['mechanic'],
-        ['delivery'] = vector4(-354.3936, -128.2882, 39.4307, 251.4931),
-        ['requiredJob'] = 'mechanic',
-    },
-
-    ['mechanic2'] = {
-        ['label'] = 'Mechanic Shop',
-        ['coords'] = vector4(1189.36, 2641.00, 38.44, 0),
-        ['products'] = Config.Products['mechanic'],
-        ['delivery'] = vector4(1189.9852, 2651.1873, 37.8351, 317.7137),
-        ['requiredJob'] = 'mechanic2'
-    },
-
-    ['mechanic3'] = {
-        ['label'] = 'Mechanic Shop',
-        ['coords'] = vector4(-1156.56, -1999.85, 13.19, 0),
-        ['products'] = Config.Products['mechanic'],
-        ['delivery'] = vector4(-1131.9661, -1972.0144, 13.1603, 358.8637),
-        ['requiredJob'] = 'mechanic3'
-    },
-
-    ['bennys'] = {
-        ['label'] = 'Mechanic Shop',
-        ['coords'] = vector4(-195.80, -1318.24, 31.08, 0),
-        ['products'] = Config.Products['mechanic'],
-        ['delivery'] = vector4(-232.5028, -1311.7202, 31.2960, 180.3716),
-        ['requiredJob'] = 'bennys'
-    },
-
-    ['beeker'] = {
-        ['label'] = 'Mechanic Shop',
-        ['coords'] = vector4(100.92, 6616.00, 32.47, 0),
-        ['products'] = Config.Products['mechanic'],
-        ['delivery'] = vector4(119.3033, 6626.7358, 31.9558, 46.1566),
-        ['requiredJob'] = 'beeker'
+        ['delivery'] = vector4(-26.62, -1672.37, 29.49, 323.68),
+        ['requiredJob'] = 'sadot',
     },
 
     ['prison'] = {
@@ -1050,13 +1068,13 @@ Config.Locations = {
 
     -- mz-fishing Shop
     ["fishing"] = {
-        ["label"] = "Boof Romano's Fish Merchant",
+        ["label"] = "Boof Romano's Fish Merchant Shop",
         ["coords"] = vector4(3803.69, 4440.73, 4.09, 4.39),
         ["ped"] = 's_m_m_migrant_01',
         ["scenario"] = "WORLD_HUMAN_STAND_MOBILE_CLUBHOUSE",
         ["radius"] = 1.5,
         ["targetIcon"] = "fas fa-fish-fins",
-        ["targetLabel"] = "Sell Fish",
+        ["targetLabel"] = "Fishing Shop",
         ["products"] = Config.Products["fishing"],
         ["showblip"] = true,
         ["blipsprite"] = 68,
