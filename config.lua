@@ -244,6 +244,7 @@ Config.Products = {
         { name = 'firstaid',                price = 25,  amount = 50 },
         { name = 'weapon_flashlight',       price = 75,  amount = 5 },
         { name = 'weapon_fireextinguisher', price = 50,  amount = 15 },
+        { name = 'prescription_pad',        price = 50,  amount = 15 },
     },
     ['mechanic'] = { -- jg-mechanic
         -- Servicing Items
@@ -974,69 +975,121 @@ Config.Locations = {
         ['delivery'] = vector4(-1507.64, 1505.52, 115.29, 262.2)
     },
 
-    ['police'] = { -- Rockford Hills PD
-        ['label'] = 'Rockford Hills PD Armory',
-        ['coords'] = vector4(-403.27, -383.22, 25.1, 13.84),
-        ['ped'] = 'mp_m_securoguard_01',
-        ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-gun',
-        ['targetLabel'] = 'Open Armory',
-        ['products'] = Config.Products['police'],
-        ['delivery'] = vector4(-414.66, -318.75, 34.52, 260.86),
-        ['requiredJob'] = 'police',
-    },
+    -- ['police'] = { -- Rockford Hills PD
+    --     ['label'] = 'Rockford Hills PD Armory',
+    --     ['coords'] = vector4(-403.27, -383.22, 25.1, 13.84),
+    --     ['ped'] = 'mp_m_securoguard_01',
+    --     ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
+    --     ['radius'] = 1.5,
+    --     ['targetIcon'] = 'fas fa-gun',
+    --     ['targetLabel'] = 'Open Armory',
+    --     ['products'] = Config.Products['police'],
+    --     ['delivery'] = vector4(-414.66, -318.75, 34.52, 260.86),
+    --     ['requiredJob'] = 'police',
+    -- },
 
-    ['police'] = { -- Rockford Hills PD 2
-        ['label'] = 'Rockford Hills PD Armory',
-        ['coords'] = vector4(-347.91, -366.79, 20.23, 214.96),
-        ['ped'] = 'mp_m_securoguard_01',
-        ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
-        ['radius'] = 1.5,
-        ['targetIcon'] = 'fas fa-gun',
-        ['targetLabel'] = 'Open Armory',
-        ['products'] = Config.Products['police'],
-        ['delivery'] = vector4(-414.66, -318.75, 34.52, 260.86),
-        ['requiredJob'] = 'police',
-    },
+    -- ['police2'] = { -- Rockford Hills PD 2
+    --     ['label'] = 'Rockford Hills PD Armory',
+    --     ['coords'] = vector4(-347.91, -366.79, 20.23, 214.96),
+    --     ['ped'] = 'mp_m_securoguard_01',
+    --     ['scenario'] = 'WORLD_HUMAN_COP_IDLES',
+    --     ['radius'] = 1.5,
+    --     ['targetIcon'] = 'fas fa-gun',
+    --     ['targetLabel'] = 'Open Armory',
+    --     ['products'] = Config.Products['police'],
+    --     ['delivery'] = vector4(-414.66, -318.75, 34.52, 260.86),
+    --     ['requiredJob'] = 'police',
+    -- },
 
-    ['ambulance'] = {
+    ['ambulance'] = { -- Sandy
         ['label'] = 'Ambulance Shop',
-        ['coords'] = vector4(1660.81, 3660.0, 35.34, 71.0820),
+        ['coords'] = vector4(1842.84, 3675.61, 34.16, 338.01),
         ['ped'] = 's_m_m_doctor_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
         ['radius'] = 1.5,
         ['targetIcon'] = 'fas fa-hand',
         ['targetLabel'] = 'Open Armory',
         ['products'] = Config.Products['ambulance'],
-        ['delivery'] = vector4(283.5821, -614.8570, 43.3792, 159.2903),
+        ['delivery'] = vector4(1821.54, 3687.45, 34.18, 215.64),
         ['requiredJob'] = 'ambulance'
     },
 
-    ['ambulance1'] = {
+    -- ['ambulance1'] = { -- DTM
+    --     ['label'] = 'Ambulance Shop',
+    --     ['coords'] = vector4(-548.1, -602.8, 34.68, 17.18),
+    --     ['ped'] = 's_m_m_doctor_01',
+    --     ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
+    --     ['radius'] = 1.5,
+    --     ['targetIcon'] = 'fas fa-hand',
+    --     ['targetLabel'] = 'Open Armory',
+    --     ['products'] = Config.Products['ambulance'],
+    --     ['delivery'] = vector4(-519.73, -592.29, 30.84, 0.32),
+    --     ['requiredJob'] = 'ambulance'
+    -- },
+
+    ['ambulance3'] = { -- Davis
         ['label'] = 'Ambulance Shop',
-        ['coords'] = vector4(-457.15, -309.71, 34.91, 71.0820),
+        ['coords'] = vector4(351.98, -1430.5, 32.43, 28.73),
         ['ped'] = 's_m_m_doctor_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
         ['radius'] = 1.5,
         ['targetIcon'] = 'fas fa-hand',
         ['targetLabel'] = 'Open Armory',
         ['products'] = Config.Products['ambulance'],
-        ['delivery'] = vector4(283.5821, -614.8570, 43.3792, 159.2903),
+        ['delivery'] = vector4(390.06, -1432.56, 29.43, 59.8),
         ['requiredJob'] = 'ambulance'
     },
 
-    ['mosleys'] = {
-        ['label'] = 'Mosleys Mechanic Shop',
-        ['coords'] = vector4(-12.34, -1677.78, 29.48, 11.23),
-        ['ped'] = 's_m_m_doctor_01',
+    ['bigtuna'] = {
+        ['label'] = 'Big Tuna Tuner Shop',
+        ['coords'] = vector4(936.19, -1055.09, 40.97, 322.68),
+        ['ped'] = 'mp_m_waremech_01',
         ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
         ['radius'] = 1.5,
         ['targetIcon'] = 'fas fa-hand',
         ['targetLabel'] = 'Open Shop',
         ['products'] = Config.Products['mechanic'],
-        ['delivery'] = vector4(-26.62, -1672.37, 29.49, 323.68),
-        ['requiredJob'] = 'sadot',
+        ['delivery'] = vector4(951.95, -1059.39, 37.06, 86.37),
+        ['requiredJob'] = 'bigtuna',
+    },
+
+    ['eastcustoms'] = {
+        ['label'] = 'East Customs Shop',
+        ['coords'] = vector4(915.99, -2104.33, 30.46, 117.39),
+        ['ped'] = 'mp_m_waremech_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-hand',
+        ['targetLabel'] = 'Open Shop',
+        ['products'] = Config.Products['mechanic'],
+        ['delivery'] = vector4(870.33, -2108.17, 30.5, 274.45),
+        ['requiredJob'] = 'eastcustoms',
+    },
+
+    ['lscustoms'] = {
+        ['label'] = 'LS Customs Shop',
+        ['coords'] = vector4(-325.52, -164.39, 39.01, 343.65),
+        ['ped'] = 'mp_m_waremech_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-hand',
+        ['targetLabel'] = 'Open Shop',
+        ['products'] = Config.Products['mechanic'],
+        ['delivery'] = vector4(-360.86, -154.39, 38.71, 213.66),
+        ['requiredJob'] = 'lscustoms',
+    },
+
+    ['redline'] = {
+        ['label'] = 'Redline Shop',
+        ['coords'] = vector4(-586.77, -938.71, 23.89, 317.04),
+        ['ped'] = 'mp_m_waremech_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-hand',
+        ['targetLabel'] = 'Open Shop',
+        ['products'] = Config.Products['mechanic'],
+        ['delivery'] = vector4(-575.15, -940.59, 23.86, 2.06),
+        ['requiredJob'] = 'redline',
     },
 
     ['prison'] = {
@@ -1053,7 +1106,7 @@ Config.Locations = {
 
     ['blackmarket'] = {
         ['label'] = 'Black Market',
-        ['coords'] = vector4(-594.7032, -1616.3647, 33.0105, 170.6846),
+        ['coords'] = vector4(0, 0, 0, 0),
         ['ped'] = 'a_m_y_smartcaspat_01',
         ['scenario'] = 'WORLD_HUMAN_AA_SMOKE',
         ['radius'] = 1.5,
