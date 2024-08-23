@@ -246,6 +246,30 @@ Config.Products = {
         { name = 'weapon_fireextinguisher', price = 50,  amount = 15 },
         { name = 'prescription_pad',        price = 50,  amount = 15 },
     },
+    ['sadot'] = {
+        { name = 'mechanic_tablet',      price = 100,  amount = 100 },
+        { name = 'cleaning_kit',         price = 500,  amount = 100 },
+        { name = 'repair_kit',           price = 500,  amount = 100 },
+        { name = 'duct_tape',            price = 500,  amount = 100 },
+        { name = 'roadworkbarrier',      price = 100,  amount = 100 },
+        { name = 'roadclosedbarrier',    price = 10,  amount = 100 },
+        { name = 'constructionbarrier',  price = 10,  amount = 100 },
+        { name = 'constructionbarrier2', price = 10,  amount = 100 },
+        { name = 'constructionbarrier3', price = 10,  amount = 100 },
+        { name = 'roadconebig',          price = 10,  amount = 100 },
+        { name = 'roadcone',             price = 10,  amount = 100 },
+        { name = 'roadpole',             price = 10,  amount = 100 },
+        { name = 'worklight',            price = 100,  amount = 100 },
+        { name = 'worklight2',           price = 10,  amount = 100 },
+        { name = 'worklight3',           price = 10,  amount = 100 },
+        { name = 'constructiongenerator', price = 10,  amount = 100 },
+        { name = 'trafficdevice',        price = 10,  amount = 100 },
+        { name = 'trafficdevice2',       price = 10,  amount = 100 },
+        { name = 'meshfence1',           price = 10,  amount = 100 },
+        { name = 'meshfence2',           price = 10,  amount = 100 },
+        { name = 'meshfence3',           price = 10,  amount = 100 },
+        { name = 'waterbarrel',          price = 10,  amount = 100 },
+    },
     ['mechanic'] = { -- jg-mechanic
         -- Servicing Items
         { name = 'engine_oil',          price = 500,  amount = 100 },
@@ -303,7 +327,7 @@ Config.Products = {
         { name = "binoculars", price = 50, amount = 50, },
         { name = "fitbit", price = 400, amount = 150, },
         { name = "powerbank", price = 30, amount = 50, },
-        { name = "tablet", price = 200, amount = 50, },
+        -- { name = "tablet", price = 200, amount = 50, },
     },
     ["fishing"] = { -- mz-fishing
         { name = 'fishingrod', price = 100, amount = 100 },
@@ -1038,6 +1062,19 @@ Config.Locations = {
         ['products'] = Config.Products['ambulance'],
         ['delivery'] = vector4(390.06, -1432.56, 29.43, 59.8),
         ['requiredJob'] = 'ambulance'
+    },
+
+    ['sadot'] = {
+        ['label'] = 'SADOT Shop',
+        ['coords'] = vector4(2348.81, 3141.82, 48.32, 7.24),
+        ['ped'] = 'mp_m_waremech_01',
+        ['scenario'] = 'WORLD_HUMAN_STAND_MOBILE',
+        ['radius'] = 1.5,
+        ['targetIcon'] = 'fas fa-hand',
+        ['targetLabel'] = 'Open Shop',
+        ['products'] = Config.Products['sadot'],
+        ['delivery'] = vector4(2322.37, 3153.66, 48.31, 276.66),
+        ['requiredJob'] = 'sadot',
     },
 
     ['bigtuna'] = {
